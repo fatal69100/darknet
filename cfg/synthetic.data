@@ -1,0 +1,5 @@
+classes= 1
+train  = /darknet/data/list_synthetic_training_images.txt
+valid  = /darknet/data/list_synthetic_test_images.txt
+names = /darknet/cfg/synthetic.names
+backup = backup/

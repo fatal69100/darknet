@@ -1527,9 +1527,9 @@ void test_detector(char *datacfg, char *cfgfile, char *weightfile, char *filenam
             else diounms_sort(dets, nboxes, l.classes, nms, l.nms_kind, l.beta_nms);
         }
         draw_detections_v3(im, dets, nboxes, thresh, names, alphabet, l.classes, ext_output);
-        save_image(im, "predictions");
+        save_image(im, "results/predictions");
         if (!dont_show) {
-            show_image(im, "predictions");
+            show_image(im, "results/predictions");
         }
 
         if (json_file) {
